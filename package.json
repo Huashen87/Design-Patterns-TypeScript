@@ -1,0 +1,13 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "node dist/src/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
