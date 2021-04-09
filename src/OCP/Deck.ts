@@ -1,7 +1,7 @@
 import { Card } from './Card';
 
 export class Deck {
-  private deck: Card[] = [];
+  protected deck: Card[] = [];
 
   constructor(deck?: Card[]) {
     if (deck) this.deck = deck;
