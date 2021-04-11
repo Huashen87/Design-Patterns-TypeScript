@@ -4,18 +4,17 @@ class Message {
   public logMessage = (): void => console.log(this.message);
 }
 
-class NamedMessage extends Message {
+class SignedMessage extends Message {
   constructor(message: string, private name: string) {
     super(message);
   }
 
-  public logMessage = (): void => console.log(this.message);
   public logName = (): void => console.log(this.name);
 }
 
 class Phone {
   constructor(private name: string) {}
-  public sendMessage = (message: string): NamedMessage => new NamedMessage(message, this.name);
+  public sendMessage = (message: string): SignedMessage => new SignedMessage(message, this.name);
 }
 
 class PublicPhone extends Phone {
